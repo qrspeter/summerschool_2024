@@ -10,8 +10,8 @@ ITMO University, International Scientific and Educational Center for Physics of 
 
 Example of experimental data:
 
-![Example_data]([http://url/to/img.png](https://github.com/qrspeter/summerschool_2024/blob/main/example_data.png))
+![Example_data](./example_data.png)
 
 Exapmle of calculated responces:
 
-![Example_responces]([http://url/to/img.png](https://github.com/qrspeter/summerschool_2024/blob/main/responces.png))
+![Example_responces](./responces.png)
