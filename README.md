@@ -6,3 +6,12 @@ The project was carried out by Anastasia Teplova, Agata Zhuravleva-Emelyanenko, 
 Project manager Petr Parfenov.
 
 ITMO University, International Scientific and Educational Center for Physics of Nanostructures (PhysNano)
+
+
+Example of experimental data:
+
+![Example_data]([http://url/to/img.png](https://github.com/qrspeter/summerschool_2024/blob/main/example_data.png))
+
+Exapmle of calculated responces:
+
+![Example_responces]([http://url/to/img.png](https://github.com/qrspeter/summerschool_2024/blob/main/responces.png))
