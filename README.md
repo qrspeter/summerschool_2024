@@ -12,6 +12,6 @@ Example of experimental data:
 
 ![Example_data](./example_data.png)
 
-Exapmle of calculated responces:
+Example of calculated responces:
 
 ![Example_responces](./responces.png)
