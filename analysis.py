@@ -186,9 +186,8 @@ if True:
     plt.plot(doses, decays[1], 'ro', label=r'$\tau$')
     #plt.plot(doses, decays[1], 'ro', label=f'$\tau$')
     begin = 0
-    end = -1
-    poly = np.polyfit(doses[begin:end], decays[1][begin:end], deg=1)
-    plt.plot(doses[begin:end], np.polyval(poly, doses[begin:end]), color='red', label='aprox', linestyle='dashed')
+    poly = np.polyfit(doses[begin:], decays[1][begin:], deg=1)
+    plt.plot(doses[begin:], np.polyval(poly, doses[begin:]), color='red', label='aprox', linestyle='dashed')
     plt.xlabel('Dose, J/cm$^2$', fontsize=14) #
     plt.ylabel('Decay time, s', fontsize=14)
     plt.title('Decay time vs Dose after pumps', fontsize=14)
