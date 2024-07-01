@@ -74,7 +74,6 @@ def warm_up(duration, filenameRaw):
         while nowTime - startTime < position:
             nowTime = time.time()
 
-        #[current, voltage] = drain.measure_current_and_voltage()
         [current, voltage] = single_measurement(var.inputVoltage)
         print('%.4f' % (nowTime - startTime), '%.5e' % current, '%.2f' % voltage)
         with open(filenameRaw, 'a') as csvfile:
@@ -122,18 +121,14 @@ def acquisition(start_meas, arr, filenameRaw):
             
         if (position >= var.pump_start) and (position < var.pump_start + var.pump_duration): 
             laserState = 10
-            #sm.write_lua("digio.writebit(1, {})".format(laserState))
         elif ((position >= var.pump_start - var.probe_shift) and (position < var.pump_start - var.probe_shift + var.probe_duration)) \
             or ((position >= var.pump_start + var.pump_duration + var.probe_shift) and (position < var.pump_start + var.pump_duration + var.probe_shift + var.probe_duration)):            
             laserState = 1
-            #sm.write_lua("digio.writebit(1, {})".format(laserState))
         else:
             laserState = 0
-            #sm.write_lua("digio.writebit(1, {})".format(laserState))
+
         sm.write_lua("digio.writebit(1, {})".format(laserState))
             
-        
-        #[current, voltage] = drain.measure_current_and_voltage()
         [current, voltage] = single_measurement(var.inputVoltage)
         print('%.4f' % (nowTime - startTime), '%.5e' % current, '%.2f' % voltage, 'laserState=', laserState)
         with open(filenameRaw, 'a') as csvfile:
