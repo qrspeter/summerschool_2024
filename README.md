@@ -15,3 +15,7 @@ Example of experimental data:
 Example of calculated responces:
 
 ![Example_responces](./responces.png)
+
+Example of calculated decay times:
+
+![Example_decays](./decay_times.png)
